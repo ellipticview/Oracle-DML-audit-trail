@@ -1,0 +1,13 @@
+# Oracle DML audit trail
+
+This project contains a utility and instructions to add a DML Audit Trail for Oracle database tables.
+
+In particular it allows you to add a region in your APEX screens to show the user changes like this:
+
+[width="100%",options="header"]
+|====================
+| Date | User | Field | Original Value | New Value  
+| 2022-01-02 | Paul | Assignee | Paul | John
+| 2022-01-02 | Paul | Department | Sales | Marketing
+|====================
+
