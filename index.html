@@ -955,6 +955,49 @@ order by 1</pre>
 </li>
 </ol>
 </div>
+<div class="paragraph">
+<p>To hide the row with aggregation/group by “filter boxes” above the report:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Select the report region in the Page Designer, set the Advanced &gt; Static ID to an identifier, e.g. <code>CHANGES</code>. This is so that the CSS only affects this region.</p>
+</li>
+<li>
+<p>Select the page and set the CSS &gt; Inline attribute to</p>
+<div class="listingblock">
+<div class="content">
+<pre>/* Hide the header row with the Group By boxes */
+#CHANGES .a-IRR-controlsContainer {
+   display: none;
+}</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Save the page</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>To make the Changes region collapsed (so that it does not show immediately):</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Select the <strong>Changes</strong> region</p>
+</li>
+<li>
+<p>Set Appearance &gt; Template to Collapsible</p>
+</li>
+<li>
+<p>Click on the Template Options and set Default State to Collapsed</p>
+</li>
+<li>
+<p>Save the page</p>
+</li>
+</ol>
+</div>
 </div>
 </div>
 </div>
@@ -1003,7 +1046,7 @@ order by 1</pre>
 <div class="sect3">
 <h4 id="_interactive_report_or_interactive_grid">5.1.4. Interactive Report or Interactive Grid</h4>
 <div class="paragraph">
-<p>The Interactive Grid has several drawbacks compared to an INteractive Report:</p>
+<p>The Interactive Grid has several drawbacks compared to an Interactive Report:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1098,7 +1141,7 @@ order by 1</pre>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-01-17 14:57:50 UTC
+Last updated 2022-01-18 05:06:02 UTC
 </div>
 </div>
 </body>
