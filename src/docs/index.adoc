@@ -104,7 +104,7 @@ The OLD and NEW values are captured as CLOB and the numeric values are also stor
 You will often have Audit columns on the table. These can be excluded from auditing. See the package code.
 
 ==== Interactive Report or Interactive Grid
-The Interactive Grid has several drawbacks compared to an INteractive Report:
+The Interactive Grid has several drawbacks compared to an Interactive Report:
 
 - The headers do not repeat making it less readable
 - The rows have equal height making it difficult (impossible?) to handle multiline field values

@@ -109,3 +109,23 @@ Go back to the Report Designer
 . Select the Interactive Report named *Changes* and click on the Attributes header on the right
 . Search Bar > Include Search Bar: Disable.
 
+To hide the row with aggregation/group by “filter boxes” above the report:
+
+. Select the report region in the Page Designer, set the Advanced > Static ID to an identifier, e.g. `CHANGES`. This is so that the CSS only affects this region.
+
+. Select the page and set the CSS > Inline attribute to
++
+----
+/* Hide the header row with the Group By boxes */
+#CHANGES .a-IRR-controlsContainer {
+   display: none;
+}
+----
+. Save the page
+
+To make the Changes region collapsed (so that it does not show immediately):
+
+. Select the *Changes* region
+. Set Appearance > Template to Collapsible
+. Click on the Template Options and set Default State to Collapsed
+. Save the page
